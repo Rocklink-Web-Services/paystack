@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "creation": "2026-06-27 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "enabled",
+  "credentials_section",
+  "public_key",
+  "secret_key",
+  "column_break_creds",
+  "instructions_html",
+  "currencies_section",
+  "supported_currencies_note"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enabled",
+   "fieldtype": "Check",
+   "label": "Enabled"
+  },
+  {
+   "fieldname": "credentials_section",
+   "fieldtype": "Section Break",
+   "label": "API Credentials"
+  },
+  {
+   "description": "Starts with pk_test_ (test mode) or pk_live_ (live mode).",
+   "fieldname": "public_key",
+   "fieldtype": "Data",
+   "label": "Public Key"
+  },
+  {
+   "description": "Starts with sk_test_ (test mode) or sk_live_ (live mode). Stored encrypted.",
+   "fieldname": "secret_key",
+   "fieldtype": "Password",
+   "label": "Secret Key"
+  },
+  {
+   "fieldname": "column_break_creds",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "instructions_html",
+   "fieldtype": "HTML",
+   "label": "Setup Instructions"
+  },
+  {
+   "fieldname": "currencies_section",
+   "fieldtype": "Section Break",
+   "label": "Supported Currencies"
+  },
+  {
+   "fieldname": "supported_currencies_note",
+   "fieldtype": "Small Text",
+   "label": "Note",
+   "read_only": 1,
+   "default": "Paystack supports NGN, GHS, ZAR, KES and USD. The currency on the Payment Request must be one of these or the transaction will be blocked before it reaches Paystack."
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2026-06-27 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Paystack",
+ "name": "Paystack Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
