@@ -44,9 +44,9 @@ class PaystackSettings(Document):
 		# Register / refresh the Payment Gateway record so ERPNext can route to us.
 		# Single doctype: self.name == "Paystack Settings".
 		create_payment_gateway(
-			"Paystack",
-			settings="Paystack Settings",
-			controller="Paystack Settings",
+			"Paystack"
+			# settings="Paystack Settings",
+			#controller="Paystack Settings",
 		)
 		call_hook_method("payment_gateway_enabled", gateway="Paystack")
 
