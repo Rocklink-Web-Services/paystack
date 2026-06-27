@@ -1,4 +1,4 @@
-# Paystack for ERPNext / Frappe
+# Paystack for ERPNext / Frappe & RockifyERP
 
 A custom Paystack payment gateway for **ERPNext v16** (Frappe Framework v16), built directly on the official `frappe/payments` framework. It plugs into the standard **Payment Request** flow, so Sales Invoices, Sales Orders, Web Forms and custom doctypes can all be paid through Paystack and reconciled automatically.
 
